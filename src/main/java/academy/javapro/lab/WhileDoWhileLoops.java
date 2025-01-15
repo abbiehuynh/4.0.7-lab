@@ -25,8 +25,29 @@ public class WhileDoWhileLoops {
         // Adds new line after counting loop to format expected output
         System.out.println();
 
+
         // 2. Implement a do-while loop that asks the user to guess a number between 1 and 10 until they guess correctly.
         System.out.println("\nDo-while number guessing game:");
+
+        // Initialize variable for random generated number between 1 and 10
+        int randomNum = random.nextInt(10) + 1;
+        // Initialize variable to store user's guess
+        int guess;
+
+        // Create do while loop
+        do {
+            // print question for user to guess a number between 1 and 10
+            System.out.print("Guess a number between 1 and 10: ");
+            // set guess variable to hold the value of the user's input
+            guess = scanner.nextInt();
+            // if guess is incorrect, tell user and prompt question to try again
+            if (guess != randomNum) {
+                System.out.println("Try again!");
+            }
+        // terminate loop when guess is equal to randomNum
+        } while (guess != randomNum);
+        // prints confirmation of the correct guess
+        System.out.println("Correct! The number was " + randomNum + ".");
 
 
         // 3. Use a while loop to calculate the sum of numbers from 1 to a user-specified limit.
