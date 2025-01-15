@@ -53,6 +53,28 @@ public class WhileDoWhileLoops {
         // 3. Use a while loop to calculate the sum of numbers from 1 to a user-specified limit.
         System.out.println("\nSum calculation using while loop:");
 
+        // Prompt the user to enter a limit
+        System.out.print("Enter a limit: ");
+
+        // Initializes variable for the limit to hold the value of the user's input
+        int limit = scanner.nextInt();
+        // Initialize variable to 0 to hold the value of the sum
+        int sum = 0;
+        // Initialize counter variable to 1
+        int num = 1;
+
+        // Create while loop
+        // while the counter variable is less than the user-specified limit
+        while (num <= limit) {
+            // add counter to sum
+            sum += num;
+            // incrementing the counter by 1
+            num++;
+        }
+        // Print the sum of numbers from 1 to the user's specified limit
+        System.out.println("The sum of numbers from 1 to " + limit + " is " + sum);
+
+
         // 4. Create a do-while loop that generates random numbers between 1 and 6 (simulating a die roll) until a 6 is rolled.
         System.out.println("\nDo-while die rolling:");
 
