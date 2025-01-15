@@ -98,6 +98,33 @@ public class WhileDoWhileLoops {
         // 5. Implement a while loop that prints the Fibonacci sequence up to the 10th term.
         System.out.println("\nFibonacci sequence using while loop:");
 
+        // Initialize variables for the first two Fibonacci numbers, a and b
+        int a = 0, b = 1, nextTerm;
+
+        // Print the first two terms; a, space, b, space
+        System.out.print(a + " " + b + " ");
+
+        // Initialize variable for the terms counter with a value of 2
+        int terms = 2;
+
+        // Create while loop to generate the rest of the sequence
+        // while terms counter is less than 10,
+        while (terms < 10) {
+            // calculate the next term in the sequence
+            nextTerm = a + b;
+            // prints the next term with a space
+            System.out.print(nextTerm + " ");
+            // updates the previous two terms for the next iteration
+            a = b;
+            b = nextTerm;
+            // incrementing the terms counter by 1
+            terms++;
+        }
+        // Adds new line after Fibonacci sequence for expected output formatting
+        System.out.println();
+
+        // expected output: 0 1 1 2 3 5 8 13 21 34
+
         scanner.close();
     }
 }
