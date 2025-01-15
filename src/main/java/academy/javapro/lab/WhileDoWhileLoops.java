@@ -78,6 +78,23 @@ public class WhileDoWhileLoops {
         // 4. Create a do-while loop that generates random numbers between 1 and 6 (simulating a die roll) until a 6 is rolled.
         System.out.println("\nDo-while die rolling:");
 
+        // Initialize variable to hold the results of die roll
+        int roll;
+
+        // Create do-while loop
+        do {
+            // Simulate rolling the die by printing action
+            System.out.println("Rolling the die...");
+            // Assign value of roll to be a random number between 1 and 6
+            roll = random.nextInt(6) + 1;
+            // Display results of the die roll
+            System.out.println("Rolled: " + roll);
+        // Terminate loop when 6 is "rolled"
+        } while (roll != 6);
+        // Display success message and end of rolling die
+        System.out.println("Got a 6! Stopping.");
+
+
         // 5. Implement a while loop that prints the Fibonacci sequence up to the 10th term.
         System.out.println("\nFibonacci sequence using while loop:");
 
